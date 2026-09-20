@@ -22,7 +22,7 @@ export default function Home() {
     url: "https://anyam.ai",
     applicationCategory: "DeveloperApplication",
     operatingSystem: "Linux, macOS, Windows",
-    license: "https://github.com/anyamai/anyamai/blob/main/LICENSE",
+    license: "https://github.com/anyamai-router/anyamai/blob/main/LICENSE",
     isAccessibleForFree: true,
     offers: {
       "@type": "Offer",

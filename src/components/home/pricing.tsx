@@ -57,7 +57,7 @@ export function Pricing() {
               </ul>
 
               <a
-                href="https://github.com/anyamai/anyamai"
+                href="https://github.com/anyamai-router/anyamai"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-9 inline-flex h-[52px] w-full items-center justify-center rounded-full bg-gradient-to-r from-em-deep to-em px-6 text-[15px] font-medium text-white shadow-glow transition-transform duration-200 hover:brightness-110 active:scale-[0.98]"

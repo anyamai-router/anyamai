@@ -57,7 +57,7 @@ export function Footer() {
             <ul className="mt-4 space-y-2.5">
               <li>
                 <a
-                  href="https://github.com/anyamai/anyamai"
+                  href="https://github.com/anyamai-router/anyamai"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[14px] text-fog transition-colors hover:text-mint"
@@ -67,7 +67,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://github.com/anyamai/anyamai/tree/main/LICENSE"
+                  href="https://github.com/anyamai-router/anyamai/tree/main/LICENSE"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[14px] text-fog transition-colors hover:text-mint"

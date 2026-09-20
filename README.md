@@ -338,12 +338,12 @@ Please keep changes focused. For provider or routing changes, include tests with
 
 ## License
 
-MIT — see `LICENSE` on GitHub: https://github.com/anyamai/anyamai/blob/main/LICENSE
+MIT — see `LICENSE` on GitHub: https://github.com/anyamai-router/anyamai/blob/main/LICENSE
 
 If a local `LICENSE` file is not yet present in this checkout, the MIT terms at the link above apply.
 
 ## Links
 
-- GitHub: https://github.com/anyamai/anyamai
+- GitHub: https://github.com/anyamai-router/anyamai
 - Landing page sections: `Product` (`#product`), `Features` (`#features`), `Docs` (`#developers`), `Open Source` (`#pricing`)
 - Issues and feature requests: use GitHub Issues on the repository above

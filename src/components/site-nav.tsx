@@ -78,7 +78,7 @@ export function SiteNav() {
 
           <div className="flex items-center gap-2.5">
             <a
-              href="https://github.com/anyamai/anyamai"
+              href="https://github.com/anyamai-router/anyamai"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="AnyamAI on GitHub"
@@ -137,7 +137,7 @@ export function SiteNav() {
                 </a>
               ))}
               <a
-                href="https://github.com/anyamai/anyamai"
+                href="https://github.com/anyamai-router/anyamai"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
