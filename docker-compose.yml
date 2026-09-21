@@ -1,0 +1,33 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: anyamai
+      POSTGRES_PASSWORD: anyamai
+      POSTGRES_DB: anyamai
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U anyamai"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  router:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: postgres://anyamai:anyamai@postgres:5432/anyamai
+      JWT_SECRET: ${JWT_SECRET:-supersecretkeythatislongenough1234}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./anyamai.toml:/app/anyamai.toml
+
+volumes:
+  pgdata:

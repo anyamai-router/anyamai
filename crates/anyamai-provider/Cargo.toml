@@ -1,0 +1,16 @@
+[package]
+name = "anyamai-provider"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+anyamai-core = { path = "../anyamai-core" }
+reqwest = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+uuid = { workspace = true }
+chrono = { workspace = true }
+thiserror = { workspace = true }
+async-trait = { workspace = true }

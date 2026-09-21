@@ -1,0 +1,21 @@
+[package]
+name = "anyamai-cli"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "anyamai"
+path = "src/main.rs"
+
+[dependencies]
+anyamai-core = { path = "../anyamai-core" }
+anyamai-db = { path = "../anyamai-db" }
+anyamai-router = { path = "../anyamai-router" }
+tokio = { workspace = true }
+clap = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+anyhow = { workspace = true }
+serde_json = { workspace = true }
+uuid = { workspace = true }
+axum = { workspace = true }

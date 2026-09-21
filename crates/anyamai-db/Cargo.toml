@@ -1,0 +1,13 @@
+[package]
+name = "anyamai-db"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+anyamai-core = { path = "../anyamai-core" }
+sqlx = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+chrono = { workspace = true }
+uuid = { workspace = true }
+thiserror = { workspace = true }

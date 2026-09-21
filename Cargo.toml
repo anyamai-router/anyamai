@@ -1,0 +1,39 @@
+[workspace]
+members = [
+    "crates/anyamai-core",
+    "crates/anyamai-db",
+    "crates/anyamai-provider",
+    "crates/anyamai-router",
+    "crates/anyamai-cli",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/anyamai-router/anyamai"
+rust-version = "1.75"
+
+[workspace.dependencies]
+tokio = { version = "1", features = ["full"] }
+axum = { version = "0.8", features = ["macros"] }
+tower = { version = "0.5", features = ["full"] }
+tower-http = { version = "0.6", features = ["cors", "trace", "request-id", "util"] }
+serde = { version = ">=1.0.210, <1.0.218", features = ["derive"] }
+serde_json = ">=1.0.130, <1.0.140"
+toml = "0.7"
+sqlx = { version = ">=0.8.0, <0.9", features = ["runtime-tokio", "tls-native-tls", "postgres", "uuid", "chrono", "migrate"] }
+uuid = { version = ">=1.10, <2", features = ["v4", "serde"] }
+chrono = { version = ">=0.4.35, <0.5", features = ["serde"] }
+reqwest = { version = ">=0.12.10, <0.13", features = ["json", "rustls-tls"], default-features = false }
+argon2 = "0.5"
+rand = ">=0.8.0, <0.9"
+tracing = ">=0.1.40, <0.2"
+tracing-subscriber = { version = ">=0.3.18, <0.4", features = ["env-filter", "json"] }
+thiserror = ">=1.0.60, <2"
+anyhow = ">=1.0.90, <2"
+clap = { version = ">=4.5.0, <5", features = ["derive"] }
+cfg-if = ">=1.0, <2"
+async-trait = ">=0.1.80, <0.2"
+tempfile = ">=3.14, <4"
