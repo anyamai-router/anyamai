@@ -50,7 +50,7 @@ When deploying AnyamAI, follow these security guidelines:
 - API keys are hashed with Argon2 before storage
 - The raw key is shown only once at creation time
 - Revoke compromised keys immediately using `anyamai api-key revoke`
-- Use the最小权限 principle: only grant necessary access
+- Use the principle of least privilege: only grant necessary access
 
 ### Network
 
